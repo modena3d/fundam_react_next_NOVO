@@ -1,7 +1,8 @@
 export default function ExemploJSX() {
+  const titulo = <h1>Entendendo o JSX</h1>;
   return (
     <div>
-      <h1>Exemplo de JSX</h1>
+      {titulo}
       <div>
         <span>Teste</span>
       </div>
