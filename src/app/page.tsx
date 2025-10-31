@@ -8,6 +8,7 @@ export default function Home() {
       <Link href="/basico/jsx-01" className="flex flex-col">LINK_JSX-01</Link>
       <Link href="/basico/jsx-02" className="flex flex-col">LINK_JSX-02</Link>
       <Link href="/basico/jsx-03" className="flex flex-col">LINK_JSX-03</Link>
+      <Link href="/basico/jsx-04" className="flex flex-col">LINK_JSX-04</Link>
     </div>
   );
 }

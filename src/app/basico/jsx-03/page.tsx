@@ -1,4 +1,4 @@
-export default function ExemploJSX02() {
+export default function ExemploJSX03() {
   const numero = 10
   const numeroPar = numero % 2 === 0
   return (
