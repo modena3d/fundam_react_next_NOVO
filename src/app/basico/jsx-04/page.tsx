@@ -29,7 +29,7 @@ export default function ExemploJSX04() {
               return (
                 <div key={nome} className="flex justify-between bg-black p-3 rounded-md">
                   <span className="text-red-500">{nome}</span>
-                  <div className="flex gap-2">
+                  <div className="flex gpa-2">
                     <button className="bg-blue-500 p-2 text-sm rounded-md">Editar</button>
                     <button className="bg-red-500 p-2 text-sm rounded-md">Excluir</button>
                   </div>
