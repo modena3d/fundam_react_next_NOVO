@@ -1,4 +1,13 @@
+import {
+  IconCode,
+  IconComponents,
+  IconHome,
+  IconSquare1,
+} from "@tabler/icons-react";
+import AreaLateral from "./AreaLateral";
 import Cabecalho from "./Cabecalho";
+import Menu from "./Menu";
+import MenuItem from "./MenuItem";
 import Rodape from "./Rodape";
 
 export interface PaginaProps {
@@ -8,7 +17,49 @@ export default function Pagina(props: PaginaProps) {
   return (
     <div className="flex flex-col min-h-screen">
       <Cabecalho />
-      <main className="p-6 flex-1">{props.children}</main>
+      <div className="flex flex-1">
+        <AreaLateral>
+          <Menu>
+            <MenuItem icone={IconHome} link="/" texto="Início" />
+            <MenuItem
+              icone={IconSquare1}
+              link="/basico/primeiro"
+              texto="Primeiro Componente"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-01"
+              texto="Entendendo JSX #01"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-02"
+              texto="Entendendo JSX #02"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-03"
+              texto="Entendendo JSX #03"
+            />
+            <MenuItem
+              icone={IconCode}
+              link="/basico/jsx-04"
+              texto="Entendendo JSX #04"
+            />
+            <MenuItem
+              icone={IconComponents}
+              link="/basico/comp-01"
+              texto="Componentes #01"
+            />
+            <MenuItem
+              icone={IconComponents}
+              link="/basico/comp-02"
+              texto="Componentes #02"
+            />
+          </Menu>
+        </AreaLateral>
+        <main className="p-6 flex-1 bg-pink-900">{props.children}</main>
+      </div>
       <Rodape />
     </div>
   );
