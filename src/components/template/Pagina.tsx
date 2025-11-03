@@ -60,6 +60,11 @@ export default function Pagina(props: PaginaProps) {
               link="/basico/comp-02"
               texto="Componentes #02"
             />
+            <MenuItem
+              icone={IconComponents}
+              link="/basico/botao"
+              texto="Usando Botão"
+            />
             <MenuLabel>Árvore de Componentes</MenuLabel>
             <MenuItem
               icone={IconArrowDown}
